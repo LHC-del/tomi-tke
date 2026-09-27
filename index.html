@@ -72,7 +72,8 @@ section{padding:56px 48px}
 .vcard.feat{grid-column:span 3;display:grid;grid-template-columns:1.1fr 1fr;gap:0}
 .vwrap{position:relative;background:#000}
 .vwrap video{width:100%;display:block;max-height:520px;background:#000}
-.vcard.feat .vwrap video{height:100%;max-height:none;object-fit:cover}
+.vcard.feat .vwrap{display:flex;align-items:center;justify-content:center;background:#000}
+.vcard.feat .vwrap video{max-height:560px}
 .vmeta{padding:16px 18px}
 .vmeta .badge{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:#ffb98a}
 .vmeta h4{font-size:15.5px;font-weight:600;margin:5px 0 3px;color:#fff}
@@ -83,8 +84,8 @@ section{padding:56px 48px}
 
 /* two-col */
 .two{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:center;margin-top:26px}
-.two .imgbox{border-radius:12px;overflow:hidden;box-shadow:var(--shadow);background:#0e0e12;aspect-ratio:16/10}
-.two .imgbox img{width:100%;height:100%;object-fit:cover;display:block}
+.two .imgbox{border-radius:12px;overflow:hidden;box-shadow:var(--shadow);background:#0e0e12}
+.two .imgbox img{width:100%;height:auto;display:block}
 .two .p{font-size:15.5px;color:#4b5262}
 
 /* integracao */
@@ -131,7 +132,7 @@ section{padding:56px 48px}
 
 /* fechamento */
 .close{position:relative;color:#fff;text-align:center;padding:64px 48px;overflow:hidden;background:#141419}
-.close .bg{position:absolute;inset:0;background:url('assets/img/tomi_hospital.jpg') center/cover;opacity:.22}
+.close .bg{position:absolute;inset:0;background:url('assets/img/fachada.jpg') center/cover;opacity:.20}
 .close .in{position:relative}
 .close h2{font-family:var(--disp);font-weight:700;font-size:33px;letter-spacing:-.02em;margin-bottom:12px}
 .pill{display:inline-block;font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;border:1px solid var(--accent);color:#ffb98a;border-radius:999px;padding:9px 20px;margin:8px 0 26px}
@@ -225,7 +226,7 @@ section{padding:56px 48px}
         <p><b>O TOMI assume esse trajeto.</b> Ele leva o item do ponto A ao ponto B de forma autônoma — chama o elevador sozinho, sobe, desce e entrega — devolvendo horas de equipe qualificada para o que só ela pode fazer: <b>cuidar do paciente</b>.</p>
         <p style="margin-top:14px">E faz isso com <b>rastreabilidade</b>: cada entrega vai em compartimento fechado, com retirada por senha (PIN). Ideal para itens controlados.</p>
       </div>
-      <div class="imgbox"><img src="assets/img/elevator.jpg" alt="TOMI integrado ao elevador"></div>
+      <div class="imgbox"><img src="assets/img/tomi_hospital.jpg" alt="TOMI em ambiente hospitalar"></div>
     </div>
   </section>
 
@@ -250,7 +251,7 @@ section{padding:56px 48px}
         <div class="call"><div class="num grad">2</div><div><h4>Até 40 kg</h4><p>Várias bandejas de servir — múltiplas entregas numa só viagem.</p></div></div>
         <div class="call"><div class="num grad">3</div><div><h4>Compartimento com senha</h4><p>Item fechado e retirada por PIN — trilha segura para medicamentos.</p></div></div>
       </div>
-      <div class="anatimg"><img src="assets/img/tomi_hospital.jpg" alt="TOMI em ambiente hospitalar"></div>
+      <div class="anatimg"><img src="assets/img/hero.jpg" alt="Robô TOMI da TK Elevator"></div>
       <div class="callcol">
         <div class="call r"><div class="num grad">4</div><div><h4>Bateria LiFePO4</h4><p>Até 8 h por carga e 2000 ciclos. Volta sozinho à base para recarregar.</p></div></div>
         <div class="call r"><div class="num grad">5</div><div><h4>Tela touch + app</h4><p>Agendamento de tarefas e controle por tela intuitiva ou aplicativo Android.</p></div></div>

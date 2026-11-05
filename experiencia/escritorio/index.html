@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TKE &middot; TOMI EXPERIENCE &middot; ESCRIT&Oacute;RIOS &mdash; 30 dias sem custo</title>
+<meta property="og:title" content="TKE · TOMI EXPERIENCE · ESCRIT&Oacute;RIOS — 30 dias sem custo">
+<meta property="og:description" content="O rob&ocirc; de entrega que chama o elevador TKE sozinho. Experimente 30 dias corridos na sua opera&ccedil;&atilde;o. Se gostar, adquira.">
+<meta name="description" content="TKE · TOMI EXPERIENCE — experimente o robô de entrega TOMI por 30 dias sem custo.">
+<meta property="og:image" content="../tomi_poster.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0b0b0e;--ink2:#121218;--accent:#ff6a00;--gold:#cda451;--wa:#25D366;--mono:'Geist Mono',monospace;--disp:'Space Grotesk',sans-serif;--sans:'Inter',sans-serif;}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--ink);color:#eef0f5;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img,video{max-width:100%}
+.wrap{max-width:760px;margin:0 auto;background:var(--ink);min-height:100vh}
+section{padding:46px 26px}
+.kick{font-family:var(--mono);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);font-weight:500}
+.hero{background:linear-gradient(180deg,#121218,#0b0b0e);border-bottom:1px solid rgba(255,255,255,.06)}
+.hero .top{display:flex;justify-content:space-between;align-items:center;margin-bottom:26px}
+.brand{font-family:var(--disp);font-weight:700;font-size:19px;color:#fff;letter-spacing:.02em}
+.brand small{display:block;font-family:var(--mono);font-size:9px;letter-spacing:.3em;color:#9aa2b1;margin-top:1px}
+.htag{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:#aeb4c1;border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:6px 12px}
+.hero h1{font-family:var(--disp);font-weight:700;font-size:38px;line-height:1.05;letter-spacing:-.025em;color:#fff;margin:14px 0 16px}
+.hero h1 .o{color:var(--accent)}
+.hero p{font-size:16px;color:#c7ccd8;max-width:60ch}
+.hero p b{color:#fff;font-weight:700}
+/* OFERTA banner */
+.offer{display:flex;gap:18px;align-items:center;margin-top:26px;background:linear-gradient(135deg,#1a1205,#121218);border:1.5px solid var(--gold);border-radius:16px;padding:20px 22px}
+.offer .big{font-family:var(--disp);font-weight:700;font-size:40px;color:var(--gold);line-height:.9;flex:none;text-align:center}
+.offer .big small{display:block;font-family:var(--mono);font-size:10px;letter-spacing:.18em;color:#aeb4c1;margin-top:6px;text-transform:uppercase}
+.offer .ot{font-family:var(--disp);font-weight:600;font-size:18px;color:#fff;line-height:1.3}
+.offer .ot span{display:block;font-family:var(--sans);font-weight:400;font-size:13.5px;color:#aeb4c1;margin-top:5px}
+/* VIDEO */
+.videowrap{padding:30px 26px 10px}
+.vlabel{font-family:var(--disp);font-weight:600;font-size:22px;color:#fff;text-align:center;margin-bottom:4px}
+.vsub{text-align:center;color:#9aa2b1;font-size:14px;margin-bottom:18px}
+.player{position:relative;border-radius:16px;overflow:hidden;border:1px solid rgba(205,164,81,.3);box-shadow:rgba(0,0,0,.6) 0 24px 60px -20px}
+.player video{width:100%;display:block;background:#000}
+.vmini{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:12px;font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:#8a8f9c}
+.vmini b{color:var(--accent)}
+/* SPECS */
+.specs{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.spec{background:var(--ink2);border:1px solid rgba(255,255,255,.07);border-radius:12px;padding:16px 16px}
+.spec .sv{font-family:var(--disp);font-weight:700;font-size:22px;color:#fff}
+.spec .sv .u{font-size:13px;color:var(--accent);font-weight:600}
+.spec .sl{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:#8a8f9c;margin-top:6px}
+.sectitle{font-family:var(--disp);font-weight:700;font-size:24px;color:#fff;margin-bottom:6px;letter-spacing:-.02em}
+.secsub{color:#9aa2b1;font-size:14.5px;margin-bottom:22px}
+/* PASSOS */
+.steps{display:grid;gap:10px}
+.step{display:flex;gap:16px;align-items:flex-start;background:var(--ink2);border:1px solid rgba(255,255,255,.06);border-radius:12px;padding:16px 18px}
+.step .n{font-family:var(--disp);font-weight:700;font-size:16px;color:var(--accent);background:rgba(255,106,0,.12);border-radius:8px;width:34px;height:34px;display:grid;place-items:center;flex:none}
+.step .st{font-family:var(--disp);font-weight:600;font-size:15.5px;color:#fff}
+.step .sp{font-size:13.5px;color:#aeb4c1;margin-top:3px}
+/* BENEFICIOS */
+.bens{display:grid;gap:14px}
+.ben{background:var(--ink2);border:1px solid rgba(255,255,255,.07);border-radius:14px;padding:22px 20px}
+.ben .bt{font-family:var(--disp);font-weight:600;font-size:18px;color:#fff;display:flex;align-items:center;gap:10px}
+.ben .bt .i{width:34px;height:34px;border-radius:9px;display:grid;place-items:center;background:rgba(255,106,0,.14);color:var(--accent);font-size:17px;flex:none}
+.ben p{font-size:14.5px;color:#aeb4c1;margin-top:10px}
+.ben.star{border-color:rgba(205,164,81,.5);background:linear-gradient(135deg,#15130c,#121218)}
+.ben.star .bt .i{background:rgba(205,164,81,.16);color:var(--gold)}
+.ben.star .bt{color:var(--gold)}
+.ben.star p b{color:#fff}
+/* DIFERENCIAL */
+.diff{background:var(--accent);color:#140a02;border-radius:16px;padding:26px 24px;display:flex;gap:16px;align-items:flex-start}
+.diff .ic{font-size:30px;font-weight:800;line-height:1;flex:none}
+.diff .t{font-family:var(--disp);font-weight:700;font-size:17px;line-height:1.3}
+.diff .t span{display:block;font-family:var(--sans);font-weight:500;font-size:14px;margin-top:6px;color:#3a1c05}
+/* PROVA */
+.proof{text-align:center;background:linear-gradient(180deg,#0b0b0e,#101016)}
+.proof .pk{font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#8a8f9c}
+.proof .names{font-family:var(--disp);font-weight:600;font-size:21px;color:#fff;margin-top:12px;line-height:1.4}
+.proof .names b{color:var(--accent)}
+.proof .plink{display:inline-block;margin-top:14px;font-family:var(--mono);font-size:12px;letter-spacing:.06em;color:var(--gold);text-decoration:none;border-bottom:1px solid rgba(205,164,81,.4);padding-bottom:2px}
+/* COMO FUNCIONA EXPERIENCIA */
+.exp{background:linear-gradient(135deg,#0d1510,#121218);border:1px solid rgba(37,211,102,.25);border-radius:16px;padding:26px 24px}
+.exp h3{font-family:var(--disp);font-weight:700;font-size:20px;color:#fff;margin-bottom:16px}
+.exp .el{display:flex;gap:12px;align-items:flex-start;margin-bottom:12px}
+.exp .el .c{color:var(--wa);font-weight:800;font-size:17px;flex:none;line-height:1.4}
+.exp .el p{font-size:14.5px;color:#c7ccd8}
+.exp .el p b{color:#fff}
+/* CTA + carimbo */
+.cta{background:linear-gradient(180deg,#0b0b0e,#15151b);border-top:1px solid rgba(255,255,255,.06)}
+.cta h2{font-family:var(--disp);font-weight:700;font-size:26px;color:#fff;text-align:center;letter-spacing:-.02em}
+.cta .lead{text-align:center;color:#c7ccd8;font-size:15px;margin:10px auto 20px;max-width:52ch}
+.wabtn{display:flex;align-items:center;justify-content:center;gap:12px;background:var(--wa);color:#04210f;font-family:var(--disp);font-weight:700;font-size:19px;text-decoration:none;border-radius:14px;padding:18px 24px;margin:0 auto 10px;max-width:420px;box-shadow:0 14px 30px -10px rgba(37,211,102,.5)}
+.wabtn .wi{font-size:24px}
+.consulta{text-align:center;font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin:16px 0 26px}
+/* CALENDARIO (seletor de periodo) */
+.cal{background:var(--ink2);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:22px 20px;margin:0 auto 18px;max-width:560px}
+.cal .ct{font-family:var(--disp);font-weight:600;font-size:17px;color:#fff;text-align:center;margin-bottom:4px}
+.cal .cs{text-align:center;color:#9aa2b1;font-size:13px;margin-bottom:16px}
+.chips{display:flex;flex-wrap:wrap;gap:9px;justify-content:center}
+.chip{font-family:var(--sans);font-weight:600;font-size:13.5px;color:#d7dbe4;background:#15151b;border:1.5px solid rgba(255,255,255,.14);border-radius:999px;padding:11px 15px;cursor:pointer;transition:border-color .15s,background .15s,color .15s;-webkit-tap-highlight-color:transparent;line-height:1}
+.chip:hover{border-color:rgba(205,164,81,.5)}
+.chip.on{background:var(--gold);color:#140a02;border-color:var(--gold)}
+.calsel{text-align:center;font-size:13px;color:#aeb4c1;margin-top:14px;min-height:18px}
+.calsel b{color:var(--gold)}
+.stampcard{display:grid;grid-template-columns:auto 1fr;align-items:center;gap:22px;background:linear-gradient(135deg,#0b0b0e,#15151b);border:1.5px solid var(--gold);border-radius:18px;padding:22px 24px;box-shadow:inset 0 0 0 1px rgba(205,164,81,.22)}
+.seal{position:relative;width:96px;height:96px;border-radius:50%;flex:none;display:grid;place-items:center;border:3px solid var(--gold);background:radial-gradient(circle at 50% 40%,#17171d,#0a0a0d)}
+.seal::before{content:'';position:absolute;inset:7px;border-radius:50%;border:1px solid rgba(205,164,81,.55)}
+.seal .lh{font-family:var(--disp);font-weight:700;font-size:38px;color:var(--gold);line-height:.9;letter-spacing:.03em}
+.seal .est{position:absolute;bottom:14px;font-family:var(--mono);font-size:7px;letter-spacing:.22em;color:rgba(205,164,81,.85)}
+.scontact .nm{font-family:var(--disp);font-weight:700;font-size:24px;color:#fff;line-height:1}
+.scontact .role{font-size:13px;color:#aeb4c1;margin-top:5px}
+.scontact .tel{font-family:var(--disp);font-size:19px;color:var(--gold);font-weight:700;margin-top:9px;line-height:1}
+.scontact .since{font-family:var(--mono);font-size:11px;color:#9aa2b1;margin-top:5px;letter-spacing:.14em;text-transform:uppercase}
+.qr{width:92px;height:92px;flex:none;background:#fff;border-radius:8px;padding:5px}
+.qr img{width:100%;height:100%;display:block}
+.foot{text-align:center;font-family:var(--mono);font-size:10.5px;color:#6b7280;padding:20px;letter-spacing:.06em;line-height:1.7}
+@media(max-width:560px){
+  .hero h1{font-size:30px}
+  section{padding:38px 20px}
+  .videowrap{padding:26px 20px 8px}
+  .specs{grid-template-columns:1fr}
+  .offer{flex-direction:column;text-align:center}
+  .stampcard{grid-template-columns:auto 1fr;gap:16px;padding:20px}
+  .qr{grid-column:1 / -1;width:84px;height:84px;justify-self:center}
+}
+@media(max-width:380px){
+  .hero h1{font-size:25px}
+  .hero p{font-size:15px}
+  section{padding:34px 16px}
+  .videowrap{padding:22px 16px 8px}
+  .offer .big{font-size:34px}
+  .sectitle{font-size:21px}
+  .wabtn{font-size:16px;padding:16px 14px;gap:8px}
+  .wabtn .wi{font-size:20px}
+  .chip{font-size:12.5px;padding:10px 13px}
+  .diff{padding:22px 18px}
+  .scontact .nm{font-size:21px}
+  .scontact .tel{font-size:17px}
+}
+</style></head>
+<body>
+<div class="wrap">
+
+  <section class="hero">
+    <div class="top">
+      <div class="brand">TKE<small>TK ELEVATOR</small></div>
+      <div class="htag">TOMI EXPERIENCE &middot; ESCRIT&Oacute;RIOS</div>
+    </div>
+    <div class="kick">Fim do 6x1 &middot; rastreabilidade total</div>
+    <h1>Leve o <span class="o">TOMI</span> para dentro do seu escrit&oacute;rio. <span class="o">30 dias. Sem custo.</span></h1>
+    <p>O rob&ocirc; de entrega que <b>chama o elevador TKE sozinho</b>, sobe, desce e entrega &mdash; sem ningu&eacute;m acompanhar. Com o fim da escala 6x1, cada trajeto feito &agrave; m&atilde;o ficou mais caro; e o que <b>some no caminho</b>, ningu&eacute;m devolve. Documentos, correspond&ecirc;ncia e suprimentos entre salas e andares, sem interromper a equipe. Teste na sua rotina e sinta a diferen&ccedil;a.</p>
+    <div class="offer">
+      <div class="big">30<small>dias &middot; 1 m&ecirc;s</small></div>
+      <div class="ot">Experi&ecirc;ncia completa, sem compromisso.
+        <span><b>30 dias corridos</b> &middot; agendamentos a partir de <b>janeiro de 2027</b>. Use no dia a dia &mdash; e, se gostar, adquira.</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="videowrap">
+    <div class="vlabel">Veja o TOMI em opera&ccedil;&atilde;o</div>
+    <div class="vsub">O rob&ocirc; que conversa direto com o elevador &mdash; e entrega no andar exato.</div>
+    <div class="player">
+      <video controls playsinline preload="metadata" poster="../tomi_poster.jpg">
+        <source src="../Tomi_TKE.mp4" type="video/mp4">
+        Seu navegador n&atilde;o suporta v&iacute;deo.
+      </video>
+    </div>
+    <div class="vmini"><span>&#9654; Toque para assistir</span> &middot; <b>TK Elevator &times; Alabia</b></div>
+  </div>
+
+  <section>
+    <div class="sectitle">O que o TOMI faz</div>
+    <div class="secsub">Solu&ccedil;&atilde;o oficial <b>TK Elevator &times; Alabia</b> &mdash; especifica&ccedil;&otilde;es do fabricante.</div>
+    <div class="specs">
+      <div class="spec"><div class="sv">40 <span class="u">kg</span></div><div class="sl">Capacidade de carga</div></div>
+      <div class="spec"><div class="sv">8 <span class="u">horas</span></div><div class="sl">Autonomia &middot; bateria LiFePO4</div></div>
+      <div class="spec"><div class="sv">LiDAR + IA</div><div class="sl">Navega&ccedil;&atilde;o + c&acirc;meras de profundidade</div></div>
+      <div class="spec"><div class="sv">PIN</div><div class="sl">Retirada por senha &middot; compartimento protegido</div></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sectitle">Da recep&ccedil;&atilde;o ao destino, sozinho</div>
+    <div class="secsub">Seis passos &mdash; sem ningu&eacute;m acompanhar o trajeto.</div>
+    <div class="steps">
+      <div class="step"><div class="n">1</div><div><div class="st">Chega o volume</div><div class="sp">A recep&ccedil;&atilde;o coloca o item no compartimento e informa o destino.</div></div></div>
+      <div class="step"><div class="n">2</div><div><div class="st">TOMI inicia a miss&atilde;o</div><div class="sp">Calcula a rota e avan&ccedil;a de forma aut&ocirc;noma at&eacute; o elevador.</div></div></div>
+      <div class="step"><div class="n">3</div><div><div class="st">Sobe sozinho</div><div class="sp">Comunica-se com o elevador TKE e seleciona o andar de destino.</div></div></div>
+      <div class="step"><div class="n">4</div><div><div class="st">Navega at&eacute; o ponto</div><div class="sp">Ao sair do elevador, segue pelos corredores at&eacute; o local programado.</div></div></div>
+      <div class="step"><div class="n">5</div><div><div class="st">O destinat&aacute;rio recebe</div><div class="sp">&Eacute; avisado e usa uma senha (PIN) para retirar o volume.</div></div></div>
+      <div class="step"><div class="n">6</div><div><div class="st">TOMI retorna</div><div class="sp">Volta &agrave; base e fica pronto para a pr&oacute;xima miss&atilde;o.</div></div></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="bens">
+      <div class="ben">
+        <div class="bt"><span class="i">&#8595;</span>Custo operacional sob controle</div>
+        <p>Com o fim do 6x1, o trajeto repetitivo ficou mais caro. O TOMI tira esse percurso da folha &mdash; sem turno extra, sem hora-extra. A equipe volta para o que exige gente.</p>
+      </div>
+      <div class="ben star">
+        <div class="bt"><span class="i">&#9673;</span>Rastreabilidade total</div>
+        <p>Cada entrega &eacute; registrada do ponto de sa&iacute;da &agrave; chegada: o que levou, para onde, quando. <b>Acaba o extravio &mdash; o custo que nunca aparece na planilha.</b></p>
+      </div>
+      <div class="ben">
+        <div class="bt"><span class="i">&#9733;</span>Vantagem competitiva</div>
+        <p>Um pr&eacute;dio que movimenta sozinho sinaliza modernidade a cada visita &mdash; e entrega 24h, sem depender de escala.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="diff">
+      <div class="ic">&uarr;</div>
+      <div class="t">S&oacute; a TK Elevator: o rob&ocirc; conversa direto com o elevador.
+        <span>Chama, embarca e desembarca no andar exato &mdash; sem ningu&eacute;m apertar bot&atilde;o. &Eacute; a integra&ccedil;&atilde;o nativa com o elevador TKE que torna o TOMI poss&iacute;vel.</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="proof">
+    <div class="pk">J&aacute; est&aacute; acontecendo &mdash; lastro real</div>
+    <div class="names">Piloto de <b>1 m&ecirc;s</b> no residencial <b>Teen&aacute; (Melnick)</b>, em Porto Alegre &mdash; moradores usando no dia a dia.</div>
+    <a class="plink" href="https://blog.br.tkelevator.com/chegou-tomi-o-robo-delivery-da-tke-integrado-ao-elevador/" target="_blank" rel="noopener">Ler o artigo oficial da TK Elevator &rarr;</a>
+  </section>
+
+  <section>
+    <div class="exp">
+      <h3>Como funciona a experi&ecirc;ncia de 30 dias</h3>
+      <div class="el"><span class="c">1.</span><p><b>Voc&ecirc; agenda</b> &mdash; a partir de janeiro/2027, escolhemos a melhor janela para o seu pr&eacute;dio.</p></div>
+      <div class="el"><span class="c">2.</span><p><b>N&oacute;s instalamos</b> e integramos o TOMI ao seu elevador TKE, sem custo para voc&ecirc;.</p></div>
+      <div class="el"><span class="c">3.</span><p><b>Voc&ecirc; usa</b> na rotina real &mdash; entregas, insumos, correspond&ecirc;ncia &mdash; por <b>30 dias corridos</b>.</p></div>
+      <div class="el"><span class="c">4.</span><p><b>Se gostar, adquire.</b> Sem compromisso durante o teste.</p></div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>Agende a sua experi&ecirc;ncia</h2>
+    <p class="lead">Escolha quando quer come&ccedil;ar &mdash; eu organizo a janela do seu pr&eacute;dio.</p>
+    <div class="cal">
+      <div class="ct">Quando voc&ecirc; quer come&ccedil;ar?</div>
+      <div class="cs">Toque no per&iacute;odo &mdash; a data j&aacute; vai escrita na mensagem.</div>
+      <div class="chips">
+        <button type="button" class="chip" data-label="1&ordf; quinzena de Janeiro/2027" data-p="come&ccedil;ando na 1&ordf; quinzena de janeiro de 2027">1&ordf; quinz. &middot; Jan</button>
+        <button type="button" class="chip" data-label="2&ordf; quinzena de Janeiro/2027" data-p="come&ccedil;ando na 2&ordf; quinzena de janeiro de 2027">2&ordf; quinz. &middot; Jan</button>
+        <button type="button" class="chip" data-label="Fevereiro/2027" data-p="come&ccedil;ando em fevereiro de 2027">Fevereiro</button>
+        <button type="button" class="chip" data-label="Mar&ccedil;o/2027" data-p="come&ccedil;ando em mar&ccedil;o de 2027">Mar&ccedil;o</button>
+        <button type="button" class="chip" data-label="a definir com o consultor" data-p="e preciso de ajuda para escolher a melhor data">Ainda n&atilde;o sei</button>
+      </div>
+      <div class="calsel">Per&iacute;odo escolhido: <b id="selp">nenhum ainda</b></div>
+    </div>
+    <a class="wabtn" id="wabtn" href="https://wa.me/5592982027411?text=Ol%C3%A1%20Luiz%21%20Quero%20agendar%20minha%20experi%C3%AAncia%20gratuita%20de%2025%20dias%20corridos%20com%20o%20rob%C3%B4%20TOMI%20(a%20partir%20de%20janeiro%2F2027)." target="_blank" rel="noopener"><span class="wi">&#9993;</span><span class="wtxt">Quero agendar meus 30 dias gr&aacute;tis</span></a>
+    <div class="consulta">TOMI &middot; aquisi&ccedil;&atilde;o sob consulta</div>
+    <div class="stampcard">
+      <div class="seal"><span class="lh">LH</span><span class="est">EST. 1999</span></div>
+      <div class="scontact">
+        <div class="nm">Luiz Henrique</div>
+        <div class="role">Consultor Comercial &middot; TK Elevator</div>
+        <div class="tel">(92) 98202-7411</div>
+        <div class="since">Consultor desde 1999</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="foot">TK ELEVATOR &times; ALABIA &middot; TOMI &mdash; Transporte Otimizado de Mercadorias Interno<br>Experi&ecirc;ncia sem custo por 30 dias corridos &middot; aquisi&ccedil;&atilde;o sob consulta &middot; Luiz Henrique</div>
+</div>
+<script>
+(function(){
+  var base='https://wa.me/5592982027411?text=';
+  var btn=document.getElementById('wabtn');
+  var sel=document.getElementById('selp');
+  var txt=btn?btn.querySelector('.wtxt'):null;
+  function msg(p){return 'Olá Luiz! Quero agendar minha experiência gratuita de 30 dias corridos com o robô TOMI — '+p+'.';}
+  var chips=document.querySelectorAll('.chip');
+  chips.forEach(function(c){
+    c.addEventListener('click',function(){
+      chips.forEach(function(x){x.classList.remove('on');});
+      c.classList.add('on');
+      if(sel){sel.textContent=c.getAttribute('data-label');}
+      if(btn){btn.href=base+encodeURIComponent(msg(c.getAttribute('data-p')));}
+      if(txt){txt.textContent='Enviar meu agendamento no WhatsApp';}
+    });
+  });
+})();
+</script>
+</body></html>
